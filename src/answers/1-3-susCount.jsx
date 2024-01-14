@@ -24,7 +24,7 @@ const App = () => {
 
   return (
     <>
-      {getSus3(numSus)}
+      {getSus(numSus)}
     </>
   )
 }
