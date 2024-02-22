@@ -1,11 +1,10 @@
 # react labs
 react basics wahoo !! 🥺🥺
 
-
 ## Exercises
 ### Background and Setting up
 - Hello World
-- Time Now
+- Player Profile
 - Sus counter
 
 ### Components
@@ -18,5 +17,4 @@ react basics wahoo !! 🥺🥺
 - Counter
 - Link's cookbook
 
-### useEffect
 

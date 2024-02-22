@@ -19,6 +19,7 @@ const App = () => {
   }
 
   // VER 3: You don't really need curly braces since this is a pretty simple function
+  // (notice how you don't need the 'return' keyword, as anything after => is implicitly returned)
   const getSus3 = (times) => Array(times).fill().map((_, i) => <p key={i}>among us</p>);
 
 
