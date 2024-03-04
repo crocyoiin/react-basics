@@ -1,0 +1,30 @@
+.main-container {
+    background-color: black;
+    padding:3em;
+}
+
+.text-box {
+    list-style-type: none;
+    border: 3px solid white;
+    align-content: start;
+    padding:2em;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0em;
+}
+
+.health-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    font-weight: bold;
+}
+
+.health-bar {
+    width: 5em;
+    height: 1.5em;
+    background-color: yellow;
+}

@@ -46,7 +46,7 @@ Open `src/App.jsx`, you should be greeted by some pre-written code; don't worry 
 
 In React, you'll mainly be working with `.jsx` files, this stands for **J**ava**S**cript **X**ML. Basically, it allows you to combine markup and javascript together, rather than putting them in seperate files. We will go further into this later :)
 
-## [TASK] Hello World!
+## [TASK 1.1] Hello World!
 ⚠️ You should clone this repository for this, and the subsequent exercises. `App.jsx` will be setup differently for easier use, and instead you'll mainly be working in `src/exercises/`.
 
 You have been given an empty page, your task is to sucessfully render "Hello World", such that your page looks somewhat like this:
@@ -54,3 +54,56 @@ You have been given an empty page, your task is to sucessfully render "Hello Wor
 ![1-1-2](./images/1-1-2.png)
 
 **[Solution: 1-1-helloWorld](../src/answers/1-1-helloWorld.jsx)**
+
+
+## Writing markup
+Plain markup is very similar to html, but wtih a couple more rules.
+Similar to html, we can also style markup elements with css by importing the file at the top of the page, and using the `className` or `id` fields to label.
+
+### html
+```html
+<h1>Kirby's questlog</h1>
+<img
+  src="url/to_a_photo.png"
+  alt="Kirby"
+  class="photo"
+>
+<ul>
+  <li>Invent new traffic lights
+  <li>Rehearse a movie scene
+  <li>Improve spectrum technology
+</ul>
+```
+### jsx
+- We must return a **singular** root div; it can be a regular div or an empty one like below called a fragment.
+- All brackets must now be closed; you can see so in the `<img>` and `<li>` elements.
+```jsx
+<>
+  <h1>Kirby's questlog</h1>
+  <img
+    src="url/to_a_photo.png"
+    alt="Kirby"
+    className="photo"
+  />
+  <ul>
+    <li>Invent new traffic lights</li>
+    <li>Rehearse a movie scene</li>
+    <li>Improve spectrum technology</li>
+  </ul>
+</>
+```
+
+## [TASK 1.2] Bad Time
+Great! You should now have an idea of how and where to put your markup :D Let's have a little go at a more complicated example;
+
+In `src/exercises/1-2-badtime/`, try to recreate the following page. You may need to create and import your own css file in order to style some elements to make it match the result.
+
+![1-1-3](./images/1-1-3.png)
+
+- Dialogue inside the textbox should be represented with an unordered list.
+- Use an empty div for the health bar (yellow box) at the bottom
+- URL for the image is `https://static.wikia.nocookie.net/undertale/images/0/0f/Sans_battle_idle.gif/`
+
+Don't worry if your styling isn't super on point, though it would be a good idea to get some practice in!
+
+**[Solution: 1-2-markup](../src/answers/1-1-helloWorld.jsx)**
